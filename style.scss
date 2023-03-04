@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  @apply cursor-pointer
+  font-light
+  block
+  border-2
+  border-indigo-900
+  p-3
+  mb-3;
+}
+
+input:checked + label {
+  @apply bg-blue-800
+  text-white
+  transition-all;
+}
+
+button[disabled] {
+  @apply bg-slate-800;
+}

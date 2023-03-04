@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Quiz</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-indigo-900 h-full max-h-screen flex justify-center items-center">
+    <div id="welcome-page" class="max-w-[650px] mx-auto bg-white text-indigo-900 p-8 rounded">
+        <h1 class="text-5xl text-center mb-12">Welcome to the JavaScript Quiz!</h1>
+        <button id="start-btn" class="rounded bg-blue-800 text-white font-extralight tracking-wide mx-auto block px-16 py-3">Start Quiz</button>
+    </div>
+  
+    <div id="quiz-page" style="display: none;" class="max-w-[650px] mx-auto bg-white text-indigo-900 p-8 rounded">
+        <h1>JavaScript Quiz</h1>
+        <div id="question" class="text-2xl font-light h-[70px] mb-8 leading-8"></div>
+        <div id="choices"></div>
+
+        <div class="navigation flex gap-3">
+            <button id="prev-btn" disabled class="w-full py-3 rounded bg-blue-800 text-white font-extralight tracking-wide">Back</button>
+            <button id="next-btn" disabled class="w-full py-3 rounded bg-blue-800 text-white font-extralight tracking-wide">Next</button>
+        </div>
+    </div>
+  
+    <div id="result-page" style="display: none;" class="max-w-[650px] w-full mx-auto bg-white text-indigo-900 p-8 rounded">
+        <h1>Your Result</h1>
+        <div id="score" class="text-4xl font-light mb-8 leading-12 mb-12 mt-4"></div>
+        <button id="restart-btn" class="w-full rounded bg-blue-800 text-white font-extralight tracking-wide block w-fit px-12 py-3">Restart Quiz</button>
+    </div>
+
+	<script src="quiz.js"></script>
+</body>
+</html>
